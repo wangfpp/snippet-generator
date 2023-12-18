@@ -43,6 +43,8 @@ class Provider extends Component {
       document.documentElement.style.setProperty("--color", "#E58100");
     } else if (mode === "atom") {
       document.documentElement.style.setProperty("--color", "#40a977");
+    } else if (mode === "webstorm") {
+      document.documentElement.style.setProperty("--color", "#19191c");
     }
 
     this.setState(

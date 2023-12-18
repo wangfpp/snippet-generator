@@ -42,6 +42,10 @@ body {
   background-color: #40a977;
 }
 
+.app--webstorm {
+  background-color: #19191c;
+}
+
 @media screen and (min-width: 960px) {
   .app {
     padding: 32px;
@@ -246,6 +250,10 @@ body {
   background-color: #40a977;
 }
 
+.app__button--webstorm.app__button--active {
+  background-color: #19191c;
+}
+
 .app__pre {
   flex: 1;
   padding: 16px;
@@ -285,6 +293,9 @@ body {
 
 .app--atom .app__btn {
   background-color: #40a977;
+}
+.app--webstorm .app__btn {
+  background-color: #19191c;
 }
 
 .app__buttons {

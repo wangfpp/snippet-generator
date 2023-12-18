@@ -4,6 +4,7 @@ import SublimeText from "./SublimeText";
 import Atom from "./Atom";
 import Clipboard from "clipboard";
 import { Consumer } from "./Context";
+import WebStorm from "./WebStorm";
 
 class Output extends Component {
   renderSnippet(mode) {
@@ -13,6 +14,8 @@ class Output extends Component {
       return <SublimeText />;
     } else if (mode === "atom") {
       return <Atom />;
+    } else if (mode === "webstorm") {
+      return <WebStorm></WebStorm>;
     }
     return null;
   }
@@ -56,6 +59,16 @@ class Output extends Component {
                 onClick={() => context.updateMode("atom")}
               >
                 Atom
+              </button>
+              <button
+                className={
+                  context.state.mode === "webstorm"
+                    ? "app__button app__button--webstorm app__button--active"
+                    : "app__button app__button--webstorm"
+                }
+                onClick={() => context.updateMode("webstorm")}
+              >
+                webstorm
               </button>
             </div>
 
